@@ -285,3 +285,40 @@ img {
     flex-direction: column;
   }
 }
+
+
+.contienecirculo{
+  z-index: 101;
+  position: relative;
+  left: 80px;
+  top: 10px;
+
+}
+.center{
+  display: flex;
+  z-index: 100;
+  
+
+  }
+  #circle span{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 56.7px;
+  font-size: 12.5px;
+  width: 8.1px;
+  text-align: center;
+  transform-origin: bottom center;
+  color: #ffffff;
+  font-weight: 100;
+  }
+
+  #flechacirculo{
+    color: #ffffff;
+    z-index: 102;
+    position: relative;
+    right: 102px;
+    top: 48px;
+   font-size:70px ;
+  
+  }
+ 

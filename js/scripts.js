@@ -1,3 +1,5 @@
+//codigo para carrusel
+
 const sliderContainer = document.getElementById('slider-container');
 const slider = document.getElementById('slider');
 const buttonLeft = document.getElementById('button-left');
@@ -67,7 +69,19 @@ slider.addEventListener('transitionend', reorderSlide);
 
 reorderSlide();
 
+//menu responsive
+
 _toggle.onclick = () =>{
   _items.classList.toggle("open")
   _toggle.classList.toggle("close")
 }
+
+//texto circular
+
+circle = document.getElementById("circle")
+ circlearray = circle.textContent.split('')
+ circle.textContent = ''
+ for(var i = 0; i< circlearray.length; i++){
+ circle.innerHTML += '<span style="transform:rotate('+
+((i+1)*10)+'deg)">'+ circlearray[i]+'</span>'
+ }
