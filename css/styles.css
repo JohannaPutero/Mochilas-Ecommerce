@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+
+.secciones > a{
+  color: white;
+  margin: 20px 30px 20px 30px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f1d1b;
+  color: white;
+}
+.secciones{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo{
+  color: white;
+  margin-right: 100px;
+  font-family: Squada One, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.contenedorbuscar{
+  display: flex;
+}
+
+.buscador{
+  border: none;
+  background-color: #3b3b3b;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+.buscar{
+  display: flex;
+  align-items: center;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  padding: 1px 10px 1px 10px;
+
+  
+}
+
+
+.iconos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+
+}
+
+.iconos > i{
+  margin-left: 10px;
+}
+.tom{
+  font-family: Italianno, Arial, Helvetica, sans-serif;
+  margin: 25px;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.mochila{
+  margin: 25px;
+}
+
+.textomochila{
+  margin: 25px;
+}
+
+header > h2{
+  font-family: Squada One, Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+}
+
+.ubicacion{
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  
+}
+.ubicacionbsas{
+  margin-left: 5px;
+  font-weight: lighter;
+}
+#location{
+  color: #5c514c;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1d1b;
+
+ 
+}
+.presentacion{
+  color: #ffffff;
+  background-color: #5c514c;
+  width: 550px;
+  height: 550px;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top:15px ;
+}
+.openPage{
+  background-color:  rgb(255, 171, 126);
+  border-radius: 25px;
+  padding: 15px;
+  margin: 25px;
+  width: 150px;
+  cursor: pointer;
+}
+
+/*CARRUSEL*/
+:root {
+  --slide-transform: 0;
+  --transition: transform 1s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  
+ 
+}
+
+.carrusel{
+  display: flex;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  
+  
+  
+}
+.slider-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  transform: rotate(90deg);
+}
+
+.slider {
+  display: flex;
+  transform: translateX(var(--slide-transform));
+  transition: var(--transition);
+  height: 550px;
+  width: 550px;
+  border-radius: 20px;
+}
+
+.slider__element {
+  min-width: 550px;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 300px;
+  transform: rotate(-90deg);
+  background-size: 100% 100%;
+  
+  
+}
+
+
+.slider-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(90deg);
+  z-index: 100;
+  left: 500px;
+  bottom: 150px;
+
+  
+}
+
+.button {
+  background: none;
+  border: solid;
+  border-width: thin;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 55px;
+  height: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 10px;
+  
+}
+.button:hover{
+  background-color: #ffffff;
+  color: #1f1d1b;
+  border: #ffffff;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+#flecha{
+  font-size: x-large;
+}
+
+.nav_toggle{
+  display: none;
+}
+@media (max-width: 768px) {
+
+  .secciones{
+      z-index: 1;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #3b3b3b;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-100%);
+      transition: 0.3s ease all;
+      padding-bottom: 10px;
+  }
+  .secciones a{ text-align: center;}
+  
+  .nav_toggle{
+      display: flex !important;
+      flex-direction: column;                
+      margin: 15px;
+  }
+  .nav_toggle span{
+      width: 30px;
+      height: 4px;
+      background: white;
+      margin-bottom: 5px;
+      border-radius: 2px;             
+      transform-origin: 5px 0px;
+      transition: all 0.2s linear;
+  }
+  .close span{
+      transform: rotate(45deg) translate(0px, 0px);
+  }
+  .close span:nth-child(2){
+      display: none;
+  }
+  .close span:nth-child(3){
+      transform: rotate(-45deg) translate(-5px, 1px);
+  }
+  .open{ transform: translateX(0) !important}
+
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+}
