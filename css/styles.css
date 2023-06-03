@@ -243,7 +243,46 @@ img {
 .nav_toggle{
   display: none;
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 1180px) {
+  .slider-buttons {
+  
+    left: 450px;
+    bottom: 150px;
+  }
+
+  .tom{
+      margin-top: 10px;
+  }
+  
+  
+}
+@media (max-width: 1080px) {
+  .slider-buttons {
+  
+    left: 375px;
+    bottom: 150px;
+  }
+
+  .tom{
+      margin: 10px;
+  }
+
+  .textomochila{
+    margin: 10px;
+  }
+  .mochila{
+    margin: 10px;
+  }
+  .ubicacion{
+    margin: 10px;
+    font-size: small;
+  }
+  
+  
+}
+@media (max-width: 950px) {
 
   .secciones{
       z-index: 1;
@@ -290,7 +329,30 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .presentacion{
+    width: 550px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .carrusel{
+    margin-left: 65px;
+  }
+
+  .slider-buttons {
+  
+    left: 220px;
+    bottom: 150px;
+  
+    
+  }
+  
 }
+
+
+
+
 
 
 .contienecirculo{
