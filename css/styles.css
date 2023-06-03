@@ -184,6 +184,7 @@ img {
   border-radius: 20px;
 }
 
+
 .slider__element {
   min-width: 550px;
   height: 100%;
@@ -350,6 +351,22 @@ img {
   
 }
 
+@media (max-width: 550px) {
+  .logo{
+    margin: auto;
+  }
+
+  .presentacion{
+    width: 550px;
+  }
+body{
+  width: 550px;
+}
+
+header{
+  width: 550px;
+}
+}
 
 
 
