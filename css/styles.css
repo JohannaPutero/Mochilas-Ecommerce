@@ -136,6 +136,7 @@ header{
   align-items: center;
   justify-content: center;
   background-color: #1f1d1b;
+  margin: 0;
 
  
 }
@@ -167,7 +168,7 @@ header{
   --transition: transform 1s;
 }
 
-img {
+.slider__element > img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -263,6 +264,46 @@ img {
   display: none;
 }
 
+.contienecirculo{
+  z-index: 101;
+  position: relative;
+  left: 80px;
+  top: 10px;
+
+}
+.center{
+  display: flex;
+  z-index: 100;
+  
+
+  }
+  #circle span{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 56.7px;
+  font-size: 12.5px;
+  width: 8.1px;
+  text-align: center;
+  transform-origin: bottom center;
+  color: #ffffff;
+  font-weight: 100;
+  }
+
+  #flechacirculo{
+    color: #ffffff;
+    z-index: 102;
+    position: relative;
+    right: 102px;
+    top: 48px;
+   font-size:70px ;
+   cursor: pointer;
+  
+  }
+
+  #flechacirculo:hover{
+ color: #5c514c;
+    
+  }
 
 @media (max-width: 1180px) {
   .slider-buttons {
@@ -355,10 +396,10 @@ img {
     margin-bottom: 15px;
     margin-top: 5px;
   }
+ .carrusel{
+  left: 40px;
+ }
 
-  .carrusel{
-    margin-left: 65px;
-  }
 
   .slider-buttons {
   
@@ -371,32 +412,71 @@ img {
 }
 
 @media (max-width: 550px) {
+  .buscar{
+    display: none;
+  }
+  .contienecirculo{
+    display: none;
+  }
+  #flechacirculo{
+    display: none;
+  }
 
   .logo{
     margin: auto;
 
-
   }
   .presentacion{
-    width:370px;
-    height: 480px;
+    margin: auto;
+    width:300px;
+    height: 520px;
+    margin-bottom: 20px;
+  }
+  .tom{
+    font-family: Italianno, Arial, Helvetica, sans-serif;
+    margin: 15px;
+    margin-top: 30px;
+    font-size: 3rem;
+  }
+  
+  .mochila{
+    margin: 15px;
+  }
+  
+  .textomochila{
+    margin: 15px;
+  }
+  
+  header > h2{
+    font-family: Squada One, Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+  }
+  
+  .ubicacion{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    
+  }
+  .carrusel{
+    left: 0;
   }
 
   .slider-buttons {
   
-    left: 150px;
+    left: 120px;
     bottom: 130px;
   }
 
 .slider {
-  height: 370px;
-  width: 370px;
+  height: 300px;
+  width: 300px;
 }
 
 
 .slider__element {
-  min-width: 370px;
-  line-height: 202px;
+  min-width: 300px;
+  line-height: 162px;
   
 }
 
@@ -406,44 +486,54 @@ img {
 
 
 
-.contienecirculo{
-  z-index: 101;
-  position: relative;
-  left: 80px;
-  top: 10px;
 
-}
-.center{
-  display: flex;
-  z-index: 100;
-  
 
-  }
-  #circle span{
+.contenedor{
+  margin-top: 0;
+  background-color:rgba(33,33,33,255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: small;
+  font-weight: lighter;
   position: absolute;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  height: 56.7px;
-  font-size: 12.5px;
-  width: 8.1px;
+  top:620px;
+}
+.iconitos{
+  display: flex;
   text-align: center;
-  transform-origin: bottom center;
-  color: #ffffff;
-  font-weight: 100;
-  }
-
-  #flechacirculo{
-    color: #ffffff;
-    z-index: 102;
-    position: relative;
-    right: 102px;
-    top: 48px;
-   font-size:70px ;
-   cursor: pointer;
-  
-  }
-
-  #flechacirculo:hover{
- color: #5c514c;
-    
-  }
+  background-color:rgba(59,59,59,255);
+  color: white;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
+  font-weight: normal;
+}
  
+.titulo{
+font-size: 30px;
+font-weight: bolder;  
+}
+.texto {
+  padding: 70px;
+}
+.truck{
+  margin-bottom: 0px;
+}
+.descripcion{
+  display: flex;
+  margin-top: 50px;
+  color: white;
+}
+.piesmochila{
+  border-radius: 30px;
+  padding: 20px;
+}
+.sub{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
