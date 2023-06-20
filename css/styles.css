@@ -95,6 +95,7 @@ nav{
   margin: 25px;
   margin-top: 50px;
   font-size: 3rem;
+  font-weight: lighter;
 }
 
 .mochila{
@@ -495,7 +496,11 @@ header{
   font-size: small;
   font-weight: lighter;
   position: absolute;
-  top:620px;
+  top:640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .iconitos{
   display: flex;
@@ -504,36 +509,108 @@ header{
   color: white;
   border-radius: 20px;
   justify-content: space-around;
+  align-items: center;
   padding: 10px;
   margin: 10px;
+  margin-top: 20px;
   font-weight: normal;
+  width: 87%;
+  height: 100px;
+}
+.icon > i{
+  font-size:xx-large;
+}
+.icon > h4{
+  font-weight: lighter;
+  margin-top: 10px;
 }
  
 .titulo{
-font-size: 30px;
-font-weight: bolder;  
+font-size: 4rem;
+font-weight: 900;
+font-family: Squada One, Arial, Helvetica, sans-serif;
+
 }
 .texto {
-  padding: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 30%;
+
+  
 }
-.truck{
-  margin-bottom: 0px;
-}
+
 .descripcion{
   display: flex;
   margin-top: 50px;
   color: white;
+  width: 87%;
+  text-align: justify;
+  justify-content: space-around;
+}
+
+.pies{
+  display: flex;
+  margin-right: 30px;
+
 }
 .piesmochila{
   border-radius: 30px;
-  padding: 20px;
+}
+
+.relleno{
+  background-color: rgb(255, 171, 126);
+  width: 30px;
+  height: 180px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  margin-top:20%;
 }
 .sub{
   margin-top: 10px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
+@media (max-width: 950px) {
+  .contenedor{
+    top:1170px;
+  }
+  .descripcion{
+    flex-direction: column;
+    align-items: center;
+  }
+  .pies{
+    margin: 0;
+  }
+  .texto{
+    margin-bottom: 20px;
+    width: 60%;
+  }
 
+}
 
+@media (max-width: 550px){
+  .contenedor{
+    top:890px;
+  }
+
+  .iconitos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    align-items: flex-start;
+  }
+  .icon{
+    display: flex;
+    margin-left: 50px;
+  }
+  .icon > h4{
+    margin-left: 10px;
+  }
+  .pies{
+    display: none;
+  }
+}
 
 
