@@ -13,13 +13,17 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding:  1.5em;
+
 }
 .logo{
     text-align: center;
     font-size: 3em;
+    font-family: Squada One, Arial, Helvetica, sans-serif;
+
 }
 .contact-side{
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    
 }
 .contact-side > * {
     padding: .1em;
@@ -27,10 +31,12 @@ body{
 }
 .contact-form{
     background: #222222;
+    
 }
 .contact-form form{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 .contact-form form .block{
     grid-column: 1/3;
@@ -58,6 +64,8 @@ body{
     border: 0;
     text-transform: uppercase;
     padding: .1em;
+    border-radius: 25px;
+    cursor: pointer;
 }
 .contact-form form button:hover,
 .contact-form form button:focus{
@@ -66,9 +74,11 @@ body{
     transition: background-color 1s ease-out;
     outline: 0;
 }
+
 .contact-info{
     /*background: #000;*/
-    background-image: url("../imagenes/imagenfondocontacto1.jpg");
+    background-image: url("../imagenes/imagenfondocontacto2.jpg");
+    
 }
 .contact-info h4,
 .contact-info p,
@@ -84,6 +94,11 @@ body{
 .contact-info ul li{
     padding: .3em;
 }
+i{
+    margin-right: 5px;
+}
+
+
 /*large*/
 @media (min-width: 700px){
     body{
@@ -101,5 +116,12 @@ body{
     .contact-info ul{
         padding: 1em;
         text-align: left;
+    }
+
+}
+
+@media (max-width: 700px){
+    .contact-form{
+        margin-bottom: 20px;
     }
 }
